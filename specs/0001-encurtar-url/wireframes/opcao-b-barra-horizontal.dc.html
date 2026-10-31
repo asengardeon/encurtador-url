@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    a { color: #2563eb; } a:hover { color: #1d4ed8; }
+  </style>
+</helmet>
+<div style="width:100%;height:100%;background:#ffffff;display:flex;flex-direction:column;align-items:center;box-sizing:border-box;padding:56px 32px;">
+  <div style="position:absolute;top:16px;left:16px;font-size:11px;letter-spacing:0.05em;color:#9ca3af;font-weight:600;text-transform:uppercase;">Opção B — Barra horizontal</div>
+  <div style="width:100%;max-width:440px;display:flex;flex-direction:column;gap:32px;">
+    <div style="display:flex;flex-direction:column;gap:8px;text-align:center;">
+      <div style="font-size:26px;font-weight:700;color:#111827;line-height:1.25;">Links longos, no seu tamanho.</div>
+      <div style="font-size:14px;color:#6b7280;">Cole um link abaixo e encurte na hora.</div>
+    </div>
+    <div style="display:flex;align-items:stretch;border:1px solid #d1d5db;border-radius:999px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,0.04);">
+      <input type="text" value="https://exemplo.com/produtos/categoria/pagina-muito-longa" style="flex-grow:1;box-sizing:border-box;border:none;outline:none;padding:14px 20px;font-size:14px;color:#374151;" />
+      <button style="padding:14px 24px;background:#2563eb;color:#ffffff;border:none;font-size:14px;font-weight:600;cursor:pointer;">Encurtar</button>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;border-top:1px solid #f3f4f6;">
+      <div style="display:flex;flex-direction:column;gap:2px;">
+        <span style="font-size:12px;color:#9ca3af;">Seu link encurtado</span>
+        <span style="font-size:16px;font-weight:700;color:#2563eb;">short.ly/aB3xZ</span>
+      </div>
+      <button style="display:flex;align-items:center;gap:6px;padding:8px 14px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:8px;font-size:13px;color:#374151;font-weight:600;cursor:pointer;">Copiar</button>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

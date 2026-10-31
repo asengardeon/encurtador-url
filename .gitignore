@@ -1,0 +1,35 @@
+# Ajuste conforme a stack escolhida no primeiro TRD.
+
+# Ambientes / dependências
+.venv/
+venv/
+node_modules/
+
+# Caches / artefatos de build
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+.coverage
+coverage.xml
+htmlcov/
+
+# Terraform (quando infra/ existir)
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
